@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset width="100px">
+        <legend>Coordonnées</legend>
+        <form method="POST" action="sauvegarde.html" name="formulaire">
+        Nom et Prénom: <input type="text" name="nom" size="20" maxlength="12" 
+       placeholder="votre nom et prénom">
+        <p>Votre sexe:
+        <input type="radio" name="R1" value="V3"checked >Masculin
+        <input type="radio" name="R1" value="V4" >Féminin</p>
+        Date de naissance <input type="date" name="date_naiss">
+        <p>
+        Etat civil
+        <select name="D1" >
+        <option>Célibataire</option>
+        <option>Divorcé</option>
+        <option>Marié</option>
+        </select></p>
+        Nombre d'enfants <input type="number" value="0">
+        <p>
+        Langue: <input type="checkbox" name="C1" value="ON">Arabe
+        <input type="checkbox" name="C2" value="ON">Français
+        <input type="checkbox" name="C3" value="ON">Anglais</p>
+        Adresse email<input type="email" name="email" required><br>
+        Téléphone <input type="tel" name="tel"><br>
+        Choisir un mot de passe <input type="password" minlength="8" maxlength="15">
+        <br>Choisir l'heure de votre rendez vous <input type="time" id="rdv" name="appt" 
+       min="09:00" max="18:00" required />
+        <br> Choisir votre salle <input type="range" name="salle" min="0" max="11" value="1" 
+       /><output></output>
+        <br>Commentaire :
+        <br>
+        <textarea rows="3" name="S1" cols="20">Zone de saisie d'un paragraphe</textarea>
+        <p align="center">
+        <input type="submit" value="Enregistrer" name="B1">
+        <input type="reset" value="Rétablir" name="B2"></p>
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,43 @@
+h3{
+    animation-duration :4s;
+    animation-name: paper;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
+@keyframes paper {
+    from
+    { margin-left:100%;
+    width:100%;}
+    to
+    {margin-left:0%;
+    width:100%;
+    }
+
+}
+h2{
+    animation-duration :3s;
+    animation-name: none;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+h2 {
+    animation-name: fade;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+        color: rgb(135, 71, 157);
+    }
+    to{
+        opacity: 0;
+    }
+}
